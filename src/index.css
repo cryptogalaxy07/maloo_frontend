@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    margin: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 0%;
+    transition: all 0.3s ease 0s;
+    background: rgb(255, 225, 97);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+.nav-link {
+    position: relative;
+}
+
+.maincontainer {
+    background-position: 50% 50%;
+    background-image: url("./assets/images/background.jpg");
+}
+.maincontainer .backgroundStyle {
+    opacity: 0.9;
+    background-color: rgb(230, 198, 59);
+}
+
+blockquote {
+    font-style: italic;
+    padding: 3rem;
+    font-size: 1.09rem;
+    position: relative;
+    border-left: 3px solid;
+}
